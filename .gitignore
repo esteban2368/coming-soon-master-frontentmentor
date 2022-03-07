@@ -11,5 +11,11 @@
 *.xd
 *.fig
 
+# Avoid folder vscode
+.vscode
+
+# Avoid folder node_modules
+node_modules
+
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store

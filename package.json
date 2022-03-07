@@ -1,0 +1,23 @@
+{
+  "name": "proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esteban2368/coming-soon-master-frontentmentor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esteban2368/coming-soon-master-frontentmentor/issues"
+  },
+  "homepage": "https://github.com/esteban2368/coming-soon-master-frontentmentor#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
