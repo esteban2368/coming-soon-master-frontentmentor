@@ -24,8 +24,22 @@ $container-max-widths: (
   xxl: 1440px
 );
 
+$spacer: 1rem;
+
+.py-6{
+    padding-top: ($spacer * 4) !important;
+    padding-bottom: ($spacer * 4) !important;
+}
+
+.lh-hero{
+    line-height: ($spacer * 1.8) !important;
+}
+
 .h1{letter-spacing: .9rem};
 
+.space{
+    height: ($spacer * 8.5);
+}
 .image-hero{
     background-image: url("../images/hero-desktop.jpg");
     background-repeat: no-repeat;
@@ -45,6 +59,9 @@ $container-max-widths: (
 @media (min-width:1399px) {
     div.inner-text-hero{
         margin-left: 150px !important;
+    }
+    .hero{
+        min-height: 800px
     }
 }
 
