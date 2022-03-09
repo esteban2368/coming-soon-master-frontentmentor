@@ -1,5 +1,22 @@
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.lh-hero {
+  line-height: 1.8rem !important;
+}
+
 .h1 {
   letter-spacing: .9rem;
+}
+
+.space {
+  height: 8.5rem;
 }
 
 .image-hero {
@@ -23,6 +40,23 @@
 @media (min-width: 1399px) {
   div.inner-text-hero {
     margin-left: 150px !important;
+  }
+  .hero {
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-hero {
+    background-image: url("../images/hero-mobile.jpg");
+    min-height: 250px;
+  }
+  .inner-text-hero {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .logo {
+    width: 100px;
   }
 }
 
