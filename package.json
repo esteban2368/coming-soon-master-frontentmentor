@@ -3,8 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3",
+    "cssnano": "^5.1.2",
+    "postcss": "^8.4.8",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.49.9"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build ./src/index.html --no-minify"
   },
   "repository": {
     "type": "git",
@@ -16,8 +29,5 @@
   "bugs": {
     "url": "https://github.com/esteban2368/coming-soon-master-frontentmentor/issues"
   },
-  "homepage": "https://github.com/esteban2368/coming-soon-master-frontentmentor#readme",
-  "dependencies": {
-    "bootstrap": "^5.1.3"
-  }
+  "homepage": "https://github.com/esteban2368/coming-soon-master-frontentmentor#readme"
 }

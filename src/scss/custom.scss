@@ -1,0 +1,102 @@
+
+$gray:                    hsl(0, 6%, 24%);
+
+$font-family-base: 'Josefin Sans', sans-serif;
+$font-size-base:            1rem;
+
+$body-color:                $gray;
+$primary:                   hsl(0, 36%, 70%);
+$primary-600:               hsla(0, 36%, 70%, 0.6);
+$soft-red:                  hsl(348, 21%, 86%);
+$danger:                    hsl(0, 93%, 68%);
+
+$enable-negative-margins:   true;
+$enable-gradients:          true;
+
+$gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+$h1-font-size:                $font-size-base * 4;
+$h2-font-size:                $font-size-base * 3.5;
+$h3-font-size:                $font-size-base * 3.25;
+$h4-font-size:                $font-size-base * 3;
+$h5-font-size:                $font-size-base * 2.75;
+$h6-font-size:                $font-size-base;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);
+
+$form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><g fill='none' fill-rule='evenodd'><circle cx='12' cy='12' r='12' fill='#F96464'/><path fill='#FFF' fill-rule='nonzero' d='M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z'/></g></svg>");
+
+$input-btn-border-width:              2px;
+
+$input-placeholder-color:             $primary-600;
+
+$input-border-color:                  $soft-red; 
+
+$spacer: 1rem;
+
+.py-6{
+    padding-top: ($spacer * 4) !important;
+    padding-bottom: ($spacer * 4) !important;
+}
+.mt-6{
+    margin-top: ($spacer * 4) !important;
+}
+
+.lh-hero{
+    line-height: ($spacer * 1.8) !important;
+}
+
+.h1{letter-spacing: .9rem};
+
+.space{
+    height: ($spacer * 8.5);
+}
+.image-hero{
+    background-image: url("../images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 610px
+}
+.bg-hero{
+    background: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-text-hero{
+    max-width: 450px
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    background-size: calc(1em + 0.5rem) calc(1em + 0.5rem) !important;
+}
+
+@media (min-width:1399px) {
+    div.inner-text-hero{
+        margin-left: 150px !important;
+    }
+    .hero{
+        min-height: 800px
+    }
+}
+@media (max-width:767px) {
+    .image-hero{
+        background-image: url("../images/hero-mobile.jpg");
+        min-height: 250px;
+    }
+    .inner-text-hero{
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    .logo{
+        width: 100px
+    }
+ }
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
