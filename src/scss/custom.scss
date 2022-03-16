@@ -13,6 +13,9 @@ $danger:                    hsl(0, 93%, 68%);
 $enable-negative-margins:   true;
 $enable-gradients:          true;
 
+$enable-shadows:            true;
+$btn-focus-box-shadow:     rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;;
+
 $gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 $h1-font-size:                $font-size-base * 4;
@@ -73,8 +76,21 @@ $spacer: 1rem;
     max-width: 450px
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid {
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.form-control:valid, .form-control.is-valid {
     background-size: calc(1em + 0.5rem) calc(1em + 0.5rem) !important;
+    background-position: right calc(5.375em + 1.5875rem) center !important;
+}
+.btn-submit{
+    max-width: 100px;
+    max-height: 60px;
+    right: 0 !important;
+    z-index: 10 !important;
+    transition: none !important;
+}
+button.btn-submit:hover{
+    background: hsl(359,75%,89%,1);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset !important;
 }
 
 @media (min-width:1399px) {
@@ -86,6 +102,9 @@ $spacer: 1rem;
     }
 }
 @media (max-width:767px) {
+    div.hero{
+        box-shadow: none !important;
+    }
     .image-hero{
         background-image: url("../images/hero-mobile.jpg");
         min-height: 250px;
@@ -96,6 +115,13 @@ $spacer: 1rem;
     }
     .logo{
         width: 100px
+    }
+    .btn-submit{
+        max-height: 43px;
+    }
+    .was-validated .form-control:invalid, .form-control.is-invalid,
+    .form-control:valid, .form-control.is-valid {
+        background-position: right calc(3.375em + 1.1875rem) center !important;
     }
  }
 
