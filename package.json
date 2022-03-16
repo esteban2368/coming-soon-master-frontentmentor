@@ -17,7 +17,8 @@
   "scripts": {
     "dev": "parcel ./src/index.html",
     "prebuild": "npx rimraf build",
-    "build": "parcel build ./src/index.html --no-minify"
+    "build": "parcel build ./src/index.html --no-minify",
+    "purgecss": "purgecss --css dist/src.cc8394bc.css --content dist/index.html -o dist/src.cc8394bc.css"
   },
   "repository": {
     "type": "git",
